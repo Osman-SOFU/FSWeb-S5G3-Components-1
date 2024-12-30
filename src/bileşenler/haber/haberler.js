@@ -4,89 +4,41 @@ import "./haberler.less";
 // ES6 Modülleri ile ilgili bilgi için bakabilirsiniz: https://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules
 const data = [
   {
-    baslik: 'Workintech Öğrencileri: "Bizler en iyi öğrencileriz!"',
+    baslik: "Workintech Teknoloji üretecek gençler yetiştiriyor",
     tarih: "11 Kasım 2022",
-    ilkParagraf: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-        moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
-        watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
-        Hutt calamari darth jabba.Darth dooku amidala organa moff.Boba darth binks solo hutt skywalker dantooine skywalker.Qui - gonn
-        jar twi'lek jinn leia jango skywalker mon.`,
+    ilkParagraf: `Yazılım ön bilgisi olmayan üniversitelileri 6 ayda dünyanın en iyi şirketlerine girecek seviyede yetiştiren Workintech, 3 yılda 5 bin yazılımcıyı sektöre kazandıracak. Öğrenciler kurs ücretini işe yerleşince ödeyecek.`,
 
-    ikinciParagraf: `Grievous fett calamari anakin skywalker hutt.Alderaan darth kenobi darth r2- d2
-        windu mothma.Sidious darth calamari moff.Wampa mothma sith wedge solo mara.Darth gonk maul sith moff chewbacca palpatine
-        mace amidala.C - 3po solo skywalker anakin yoda leia.Maul wampa bespin watto jade ewok darth jabba.Lando dantooine moff
-        k - 3po dantooine luke.Fisto mandalore darth wedge c - 3p0 ahsoka.Secura moff palpatine fett.Anakin sith darth darth.Moff
-        solo leia ben ponda jade.Binks jango aayla skywalker skywalker cade.Mustafar darth ventress anakin watto.Yavin jawa sebulba
-        owen jinn tatooine sith organa.`,
+    ikinciParagraf: `Gençlere 6 ay boyunca sabah 9 akşam 6 saatleri arasında eğitim veren Workintech, bu programla gençleri işe girecek seviyeye getiriyor. Eğitim boyunca üniversiteliler öğretim ücreti ödemiyor, işe yerleşince ödemeye başlıyor. Eğer çocuk 12 ay içerisinde bir iş bulamazsa da kurs ücreti alınmıyor. Bir bilgisayar ve internet vasıtasıyla her yerden çalışabilen yazılımcılar, yurtiçinde yaşayıp, dövizle yurtdışına da iş yapabiliyor.`,
 
-    ucuncuParagraf: `Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
-        naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff baba wicket
-        han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé wookiee. Leia
-        moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`,
+    ucuncuParagraf: `Türkiye'de yeni mezun bir yazılımcı 15 bin ila 30 bin TL arasında maaş alıyor. Bu iş kolunda deneyim kazandıkça maaşlar katlanıyor. Tuğrul Türkkan'ın verdiği bilgiye göre şu anda en fazla yazılımcıya ihtiyacı olan sektör bankacılık. Finans sektörü yazılımcıları ortalama 22 ila 25 bin TL arasında maaşlara işe alıyor. Daha sonra telekom, e-ticaret ve oyun sektörü geliyor. Kursu bitiren gençlerin iş bulmalarına da yardımcı olduklarını ifade eden Tuğrul Türkkan: "Biz bu çocuklar kursu bitirir bitirmez, iş ortaklarımıza tavsiye ediyoruz. Gençlere mülakatlara nasıl girecekleri, nasıl iş arayacakları hatta nasıl maaş pazarlığı yapacaklarına kadar her konuda eğitim veriyoruz" diye konuştu.`,
   },
   {
-    baslik: "Javascript ve Sen, ES6",
-    tarih: "10 Kasım 2022",
-    ilkParagraf: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
-        Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
-        snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
-        yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon
-        knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed.
-        Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks`,
+    baslik: "Bosch, çok daha verimli 800V motorların üretimine başladı!",
+    tarih: "10 Ekim 2023",
+    ilkParagraf: `Alman teknoloji devi Bosch, yeni nesil elektrik motor ve inverter üretimine başladığını duyurdu. Silikon karbür çiplerin kullanımı sayesinde eski nesil 400V çözümlere kıyasla verimliliği ciddi şekilde artıran firma, belki de bir sonraki nesil Togg'lara bu motoru tedarik edecek.`,
 
-    ikinciParagraf: `Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder
-        wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir
-        mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma
-        and Parvati Sorting Hat Minister of Magic blue turban remember my last.`,
+    ikinciParagraf: `Motorun içerisinde yeni bir bakır sargı tasarımj kullandığını ve bu sayede güç yoğunluğunu %35 artırarak aynı beygir gücü ve torka daha hafif motorla ulaşabildiğini söyleyen Bosch, inverter tarafında ise ısınma kaynaklı kayıpları %50 düşürüp verimliliği neredeyse %99 seviyesine çıkarmış.`,
 
-    ucuncuParagraf: `Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights
-        Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven
-        roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot
-        sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`,
+    ucuncuParagraf: `Elektrikli araçlarda 800V mimariye geçişin kaçınılmaz olduğu aşikar. Daha hafif motor, inverter ve yüksek voltaj kablolaması ile araç ağırlığını düşüren 800V mimari, güç elektroniği tarafında verimliliği artırarak menzile çok büyük katkı sağlıyor. Üstelik DC şarj hızının da 400 kW üstüne çıkmasını mümkün kılıyor.`,
   },
   {
-    baslik: "React vs Angular vs Vue",
+    baslik: "Apple Vision Pro, insanların akıl sağlığını tedavi edecek",
     tarih: "9 Kasım 2022",
-    ilkParagraf: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit.`,
+    ilkParagraf: `Apple, karma gerçeklik gözlüğü Vision Pro ile insanların akıl hastalıklarını iyileştirmeyi hedefliyor. Sensör ve kameralar yardımıyla kullanıcıların yüz ifadelerini, hislerini ve duygularını ölçeceği, kullanıcıların depresyon ve anksiyetelerini tedavi edebileceği kaydedildi.`,
 
-    ikinciParagraf: `Pidgey Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pidgeotto Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Pidgeot Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rattata Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Raticate Lorem ipsum dolor sit amet, consectetur adipiscing elit. Spearow Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Fearow Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ekans Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Arbok Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pikachu Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Raichu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sandshrew Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Sandslash Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nidorina Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoqueen Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidorino Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Nidoking Lorem ipsum`,
+    ikinciParagraf: `Bu teknolojinin aynı zamanda ağırlıktaki değişiklikleri, göz bebeği genişlemesini ölçebileceği ve potansiyel olarak Parkinson hastalığının belirtilerini tespit etmek için bir araç olarak kullanıcıların hareketlerini değerlendirebileceği bildiriliyor. Vision Pro'nun bu koşulları tedavi etmek için kullanıcıların stres, depresyon veya anksiyetesini hafifletmeyi amaçlayan dahili bir ekranda görüntüler ve sesler gösterebileceği belirtildi. Kulaklık bir eğlence cihazı olarak tasarlanmış olsa da, ruhsal hastalıkları ele almak için potansiyel kullanımı Apple'ın ruh sağlığı alanındaki ilk girişimi değil.
+    Teknoloji devi Haziran ayında Sağlık uygulamasında ruh sağlığı özelliklerini tanıtarak iPhone, iPad ve Apple Watch kullanıcılarının fiziksel aktivitelerinin yanı sıra ruh hallerini takip etmelerine ve ruh sağlıklarını izlemelerine olanak sağladı.`,
 
-    ucuncuParagraf: `Gotta catch 'em all Horsea gym Ninjask Absol Sinnoh Poliwag. Gotta catch 'em all Youngster wants to fight Soda Pop Floatzel
-        Leech Life Seismitoad Ariados. Earthquake Pokemon Glitch City Tail Whip Skitty Ekans Dialga. Ut aliquip ex ea commodo consequat James
-        Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`,
+    ucuncuParagraf: `Hastalık Kontrol ve Önleme Merkezlerine göre, ABD'de her beş kişiden biri ruhsal hastalıklarla mücadele ediyor. Yaklaşık her 25 ABD'li yetişkinden biri bipolar bozukluk, majör depresyon veya şizofreni gibi ciddi akıl hastalıklarıyla mücadele etmektedir.`,
   },
   {
-    baslik: "2022'de Profesyonel Yazılımcı Olmak",
-    tarih: "1 Kasım 2022",
-    ilkParagraf: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
-          hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
-          Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
+    baslik: "Adobe, 20 milyar dolarlık Figma satın alımından vazgeçti",
+    tarih: "18 Kasım 2023",
+    ilkParagraf: `Adobe, Figma'yı 20 milyar dolara satın alma planından, şirketlerin İngiltere ve Avrupa Birliği düzenleyicilerinden onay almak için net bir yol olmadığını tespit etmelerinin ardından vazgeçtiğini açıkladı. Adobe, işbirliğine dayalı tasarım platformu Figma'ya daha önce kararlaştırılan 1 milyar dolarlık fesih bedelini ödeyecek.`,
 
-    ikinciParagraf: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
-          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
-          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
+    ikinciParagraf: `Kasım ayında, Birleşik Krallık Rekabet ve Piyasalar Kurumu (CMA) ve Avrupa Komisyonu, önerilen satın almanın rekabet üzerindeki etkisine ilişkin endişelerini dile getirmişti. CMA geçici bulgularında birleşmenin iki ana rakip arasındaki “rekabeti ortadan kaldıracağını" söylemişti. Komisyon, anlaşmayı engellemeyi ya da Adobe'nin Figma'nın temel ürünü Figma Design'ı Adobe XD ile birlikte satmasını talep etmeyi düşündüğünü belirtmişti.`,
 
-    ucuncuParagraf: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
-          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
-          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
+    ucuncuParagraf: `Bugün ise Adobe, CMA'ya herhangi bir potansiyel çözüm yolu sunamayacağını beyan etti. Bir Adobe sözcüsü Bloomberg'e verdiği demeçte, "Hiçbir gerçekçi çözümün CMA'nın sürdürdüğü endişeleri karşılamayacağı ortada" dedi. Avrupa Komisyonu’da bu birleşmenin rekabeti azaltabileceğini söyemiş ve birleşme konusunda nihai kararını 5 Şubat'a kadar vereceğini açıklamıştı. Adobe, Avrupalı düzenleyicileri yatıştırmak için olası çözümler sunmaya istekli olduğunu belirtmişti, ancak görünen o ki artık durum böyle değil. Adobe Yönetim Kurulu Başkanı ve CEO'su Shantanu Narayen yaptığı açıklamada, “Adobe ve Figma düzenleyici bulgulara kesinlikle katılmıyor, ancak bağımsız olarak ilerlemenin kendi çıkarlarımıza en uygun yol olduğuna inanıyoruz” dedi`,
   },
 ];
 
@@ -101,10 +53,10 @@ const data = [
 
     {üç ayrı paragraf elementi}
 
-    <button class="expandButton">+</button>
+    <span class="expandButton">+</span>
   </div>
 
-  Adım 2: Hala `haberYapici` içindeyiz, button.expandButton 'a bir click event dinleyici ekleyin.
+  Adım 2: Hala `haberYapici` içindeyiz, span.expandButton 'a bir click event dinleyici ekleyin.
   Bu dinleyici div.article öğesine 'article-open' class'ını ekleyip/çıkaracak (toogle).
 
   Adım 3: Fonksiyonunuzdan bir öğe döndürmeyi unutmayın.
@@ -115,3 +67,42 @@ const data = [
   Adım 5: Veri dizisine yeni haber nesnesi eklemeyi deneyin. Diğer verilerle aynı yapıda olmasına dikkat edin.
   Eklediğiniz yeni haberi görmek için sayfayı yenileyin.
 */
+
+const haberYapici = function (news) {
+  // Create new element
+  const newsItem = document.createElement("div");
+  // Add classname to new element
+  newsItem.classList.add("article");
+
+  const h2Header = document.createElement("h2");
+  h2Header.textContent = news.baslik;
+
+  const pDate = document.createElement("p");
+  pDate.textContent = news.tarih;
+
+  const pElement1 = document.createElement("p");
+  pElement1.textContent = news.ilkParagraf;
+  const pElement2 = document.createElement("p");
+  pElement2.textContent = news.ikinciParagraf;
+  const pElement3 = document.createElement("p");
+  pElement3.textContent = news.ucuncuParagraf;
+
+  const spanButton = document.createElement("span");
+  spanButton.classList.add("expandButton");
+  spanButton.textContent = "+";
+
+  // Attach created elements to parentElement
+  newsItem.append(h2Header, pDate, pElement1, pElement2, pElement3, spanButton);
+
+  spanButton.addEventListener("click", (e) => {
+    newsItem.classList.toggle("article-open");
+  });
+
+  return newsItem;
+};
+
+const articles = document.querySelector(".articles");
+
+data.forEach((i) => {
+  articles.append(haberYapici(i));
+});

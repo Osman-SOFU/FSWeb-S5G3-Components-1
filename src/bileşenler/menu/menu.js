@@ -11,7 +11,7 @@ let menuElemanlari = [
 ];
 
 /*
-  Adım 1: Aşağıdaki etiketler gibi bir menü oluşturmak için 'menuYapici' adlı bir bileşen yazın:
+  Adım 1: Aşağıdaki etiketlee gibi bir menü oluşturmak için 'menuYapici' adlı bir bileşen yazın:
 
   <div class="menu">
     <ul>
@@ -24,7 +24,7 @@ let menuElemanlari = [
   Adım 2: Fonksiyonun içinde, dizideki her öğe için bir liste <li> öğesi oluşturarak dizi üzerinde yineleme yapın.
   Tüm bu öğeleri <ul>'a ekleyin
 
-  Adım 3: Hala fonksiyon içindeyiz, DOM'dan menü düğmesini seçin (`index.html` içinde `menu-button` sınıfına (class) sahip öğe).
+  Adım 3: Hala fonksiyon içindeyiz, DOM'dan menü düğmesini seçin ('menu-button' sınıfına(class) sahip öğe).
 
   Adım 4: Menü butonuna bir `click` event dinleyicisi ekleyin. Butona her tıklanıldığında div.menu classına `menu--open`('menu' class'ına sahip olan div) ekleyip/silecek(toogle).
   
@@ -34,3 +34,27 @@ let menuElemanlari = [
 
   Adım 6: 'menuYapici' fonksiyonunu ve 'menuElemanlari' dizisini kullanarak menüyü oluşturun, ve döndürülen menüyü header'e ekleyin.
 */
+
+const menuYapici = function (menuElements) {
+  const newMenu = document.createElement("div");
+  newMenu.classList.add("menu");
+
+  const newUl = document.createElement("ul");
+  newMenu.append(newUl);
+
+  menuElements.forEach((i) => {
+    const newLi = document.createElement("li");
+    newLi.textContent = i;
+    newUl.append(newLi);
+  });
+
+  const menuBtn = document.querySelector(".menu-button");
+  menuBtn.addEventListener("click", (ebru) => {
+    newMenu.classList.toggle("menu--open");
+  });
+
+  return newMenu;
+};
+
+const header = document.querySelector(".header");
+header.append(menuYapici(menuElemanlari));
